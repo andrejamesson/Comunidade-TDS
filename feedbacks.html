@@ -161,8 +161,43 @@
                     </div>
                   <div class="text-center">
 
-                    <a class="btn btn-dark">Deixar meu feedback</a>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#feedbackModal">Deixar meu feedback</button>
+
                   </div>
+                  <!-- Modal com formulario de feedback -->
+                  <div class="modal" id="feedbackModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Deixe seu Feedback</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="nomeCompleto" class="form-label">Nome completo</label>
+                              <input type="text" class="form-control" id="nomeCompleto" placeholder="João da Silva" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="emailControl" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="emailControl" placeholder="email@servidor.com" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="mensagemControl" class="form-label">Mensagem</label>
+                              <textarea class="form-control" id="mensagemControl" rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                      </form>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
                   </div>
 
                   
