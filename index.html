@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página -->
+    <title>Comunidade TDS</title>
+     <!-- Folhas de estilo -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" 
+      type="image/png" 
+      href="/assets/ico_cursos_Informatica.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <!-- Cabeçalho da página -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+           <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              id="logo"
+              src="/assets/ico_cursos_Informatica.png"
+              width="50"
+              alt="Comunidade TDS"
+          /></a>
+
+            <!-- Botão para alternar o menu em telas pequenas -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Itens do menu de navegação -->
+          <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Links para páginas principais -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feedbacks.html">FeedBacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+            <!-- Botão para solicitar acesso ao Discord -->
+            <div class="ms-auto">
+              <ul class="navbar-nav">
+                <li class="nav-item discord-link">
+                  <a class="btn btn-primary" href="login.html"
+                    ><i class="bi bi-discord"></i> Solicitar Acesso</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+       <!-- Seção de destaque -->
+      <section class="app">
+        <div class="container text-center">
+          <h1 class="title display-4 fw-bold lh-1 mb-3">
+            Venha fazer parte dessa <b>comunidade</b> com mais de
+            <b>900 Alunos!</b>
+          </h1>
+          <h4 class="mt-5">Estudar é um movimento constante</h4>
+          <a href="#quemsomos" class="btn btn-primary btn-lg mt-5 w-50"
+            >Conhecer</a
+          >
+        </div>
+      </section>
+
+      <section id="quemsomos" class="quemsomos p-5">
+        <div class="container text-center">
+          <h1 class="title text-center display-4 fw-bold lh-1 mb-3 pb-2 border-bottom">Quem somos?</h1>
+          <h4 class="mt-3">
+            Assista esse pequeno video sobre nossa comunidade!
+          </h4>
+
+          <video id="video-background" autoplay loop muted>
+            <source src="/assets/videos/bg-abaut.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            src="/assets/videos/apresentacao.mp4"
+            class="rounded-5 shadow-lg m-4"
+            width="100%"
+            controls
+            loop
+          ></video>
+        </div>
+      </section>
+      <!-- Seção de últimas atualizações -->
+      <section class="news h-100 p-5">
+        <div class="container">
+          <h1
+            class="titlenews text-center display-4 fw-bold lh-1 mb-3 pb-2 border-bottom"
+          >
+            Últimas Atualizações
+          </h1>
+          <h4 class="text-center">Novidades sobre a comunidade</h4>
+          <div class="container h-100 px-4 py-5" id="news">
+            <div
+              class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+            >
+              <div class="col">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.2),
+                        var(--primary)
+                      ),
+                      url('https://images.pexels.com/photos/5532844/pexels-photo-5532844.jpeg');
+                    border: 0;
+                  "
+                >
+                  <div
+                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                  >
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                      Validação dos Estudantes
+                    </h2>
+                    <p>
+                      Agora todos os alunos no discord, são validados para
+                      segurança de todos
+                    </p>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <a href="/blog/validacao.html" class="btn btn-dark"
+                          >Ler mais</a
+                        >
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#geo-fill"></use>
+                        </svg>
+                        <small>Por: André Jamesson</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#calendar3"></use>
+                        </svg>
+                        <small>3d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.2),
+                        var(--primary)
+                      ),
+                      url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/170719048/original/8daa7695d302193a257b5aad5fac73373096862c/join-your-discord-call-and-scream-with-a-friend.png');
+                    border: 0;
+                  "
+                >
+                  <div
+                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                  >
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                      Encontros semanais
+                    </h2>
+                    <p>
+                      Toda semana temos um encontro extra promovido por alunos.
+                    </p>
+
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <a href="/blog/encontros.html" class="btn btn-dark"
+                          >Ler mais</a
+                        >
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#geo-fill"></use>
+                        </svg>
+                        <small>Por: Jamesson Lima</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#calendar3"></use>
+                        </svg>
+                        <small>4d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.2),
+                        var(--primary)
+                      ),
+                      url('https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg');
+                    border: 0;
+                  "
+                >
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                      Aulas Síncronas gravadas
+                    </h2>
+                    <p>
+                      Todas os encontros aovivo, são gravados e alocados numa
+                      timeline no discord.
+                    </p>
+
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <a href="/blog/aulassincronas.html" class="btn btn-dark"
+                          >Ler mais</a
+                        >
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#geo-fill"></use>
+                        </svg>
+                        <small>Por: José Murilo</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#calendar3"></use>
+                        </svg>
+                        <small>5d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-dark" onclick="contarCliques()">Ver mais notícias</button>
+              <small><p>Não clique mais de 5 vezes</p></small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Rodapé da página -->
+    <footer class="footer mt-auto py-3 bg-light text-center">
+      <div class="container">
+        <span class="text-muted"
+          >© TDS-PE Alunos - 2024 Todos os direitos reservados</span
+        >
+      </div>
+    </footer>
+    <!-- Script JavaScript -->
+    <script src="/js/script.js"></script> 
+    <!-- Bootstrap CDN js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Gsap CDN js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Scroll Trigger CDN JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

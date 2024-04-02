@@ -1,0 +1,265 @@
+/* Sobre o css, sim eu usei o framework bootstrap para ganhar tempo,
+claro que isso não invalida o trabalho, pois era até recomendado usar 
+se fosse possivel. */
+
+/* 
+Tendo em vista isso, nessa folha de estilos, voc6e vai ver diversos termos em
+ingles, incluive o parametro !important, em varios lugares, pois ele força
+o bootstrap a usar as propriedades da minha folha, e não o padrão definido
+no arquivo em CDN do framework */
+
+/* No mais é isso, bons estudos a todos, e gostaria de ressaltar de que este é um projeto real, que logo estará no ar! */
+
+/* Conto com a coolaboração de todos os interessados, la no discord */
+
+:root {
+  --primary: #8009ff;
+  --primary-hover: #6665d2;
+  --gray: #424549;
+  --gray2: rgb(39, 41, 44);
+}
+
+.btn {
+  transform: scale(1);
+  border-radius: 20px !important;
+}
+.btn:hover {
+  transform: scale(1.06);
+  transition: transform 0.5s ease;
+}
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #fff !important;
+}
+.btn-dark {
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.navbar {
+  /* background-color: var(--gray) !important; */
+  /* background-color: transparent; */
+  padding: 10px 0 10px 0 !important;
+
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+  top: 0;
+  animation: nav 1ms ease-in-out backwards;
+  animation-timeline: scroll(y);
+}
+
+.navbar-secundaria {
+  background-color: var(--gray) !important;
+}
+@keyframes nav {
+  from {
+    background-color: rgba(0, 0, 0, 0); /* Começa transparente */
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.8); /* Termina com a cor desejada */
+  }
+}
+.nav-link {
+  color: white !important;
+  display: inline-block !important;
+  padding: 10px !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  border-radius: 10px;
+  background: var(--gray2) !important;
+}
+.navbar-brand {
+  color: aliceblue !important;
+}
+.navbar-toggler {
+  border-color: #fff !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.active {
+  background: var(--primary) !important;
+  border-radius: 10px;
+}
+.active:hover {
+  background: var(--primary) !important;
+}
+audio {
+  width: 100%;
+}
+
+.feedbacks {
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.row {
+  margin-top: 20px !important;
+}
+.nickname {
+  margin-right: 10px;
+}
+.avatar {
+  margin-right: 7px;
+  transition: transform 0.5s ease;
+}
+.avatar:hover {
+  transform: scale(1.6);
+}
+.bi-star-fill,
+.bi-star-half,
+.bi-star {
+  color: var(--primary);
+}
+
+.corpo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.header-title {
+  background-color: var(--primary);
+  background: linear-gradient(to right, var(--primary), #6665d2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.header-title p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), var(--primary)),
+    url("/assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.quemsomos {
+  background-image: linear-gradient(var(--primary), rgba(0, 0, 0, 0.2));
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  color: #fff !important;
+  font-size: x-large;
+}
+h4 {
+  color: aliceblue !important;
+}
+
+#quemsomos {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0.2; */
+
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .app::before {
+    background-size: cover;
+    background-position: center;
+  }
+  .title {
+    font-size: 3em;
+  }
+}
+
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.card-footer span {
+  font-weight: bold;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.06);
+}
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.rodape {
+  padding: 20px;
+  background-color: #424549;
+  color: aliceblue;
+  margin: 0;
+}
+
+/* Form */
+
+.form-control {
+  border-radius: 20px !important;
+  background-color: #ececec !important;
+}
+
+.login {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+
+  height: 100vh;
+}
+
+/* news section */
+
+.news {
+  background: linear-gradient(to right, var(--primary), var(--primary-hover));
+  height: 100vh;
+}
+.news p {
+  color: aliceblue !important;
+}
+.news a {
+  text-decoration: none;
+}
+.news .titlenews {
+  padding-top: 20px;
+  font-size: 3em !important;
+  font-style: bolder;
+  color: aliceblue !important;
+  font-variant-caps: titling-caps;
+  line-height: 1;
+}
