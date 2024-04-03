@@ -9,7 +9,7 @@ function contarCliques() {
     console.log("Variável --primary trocado o valor para #ff004f");
 
     contadorCliques = 0;
-    console.log("Contador resetado");
+    console.log("Contador resetad fwfb wqyvyqvwoyfqwo");
 
   }
 }
