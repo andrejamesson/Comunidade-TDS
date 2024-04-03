@@ -197,6 +197,9 @@ h4 {
   .title {
     font-size: 3em;
   }
+  .news{
+    padding: 0;
+  }
 }
 
 .card {
