@@ -1,121 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solicitar Acesso - Comunidade TDS</title>
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="icon" 
-    type="image/png" 
-    href="/assets/ico_cursos_Informatica.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/ico_cursos_Informatica.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              id="logo"
+              src="/assets/ico_cursos_Informatica.png"
+              width="50"
+              alt="Comunidade TDS"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-</head>
-<body>
-        <header>
-                <nav class="navbar fixed-top navbar-expand-lg " >
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feedbacks.html">FeedBacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
 
-                    <div class="container">
-                      <a class="navbar-brand" href="index.html" >
-                        <img id="logo" src="/assets/ico_cursos_Informatica.png" width="50" alt="Comunidade TDS"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                  
-
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="feedbacks.html">FeedBacks</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="sobre.html">Sobre</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="contato.html">Contato</a>
-                          </li>
-
-                      </ul>
-                      
-                      <div class="ms-auto">
-                          <ul class="navbar-nav">
-                              <li class="nav-item discord-link">
-                                  <a class="btn btn-primary" href="login.html"><i class="bi bi-discord"></i> Solicitar Acesso</a>
-                                  
-                                </li>
-                            
-
-                          </ul>
-                      </div>
-                        
-                      </div>
-                    </div>
-                  </nav>
-        
-                  
-        </header>
-        <main  style="background-image:linear-gradient(
-          rgba(0, 0, 0, 0.2),
-          var(--primary)
-        ), url('https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg'); background-position: center; background-size: cover;">
-            <section class="container login" >
-                
-                <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-                  <div class="row align-items-center g-lg-5 py-5">
-                    <div class="col-lg-7 text-center text-lg-start">
-                      <h1 class="display-4 fw-bold lh-1 mb-3 title">Você está quase lá!</h1>
-                      <h4 class="col-lg-10 fs-4">Nós precisamos do seu nome completo para validar se você está matriculado no curso de TDS.</h4>
-                    </div>
-                    <div class="col-md-10 mx-auto col-lg-5">
-                      <form class="p-4 p-md-5 border rounded-3 bg-light">
-                        <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="floatingName" placeholder="Nome completo" required>
-                          <label for="floatingName">Nome completo</label>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                          <input type="email" class="form-control" id="floatingInput" placeholder="email@servidor.com" required>
-                          <label for="floatingInput">Email</label>
-                        </div>
-                       
-                        <div class="checkbox mb-3">
-                          <label>
-                            <input type="checkbox" value="remember-me"> Confirmo que li e aceito os <a href="#">termos</a> dessa plataforma
-                          </label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Solicitar</button>
-                        
-                        <hr class="my-4">
-  
-                        <small class="text-muted"><a href="minha-conta.html">Clique aqui para ver suas comunidades</a></small>
-  
-                      </form>
-                      
-                    </div>
-                  </div>
+            <div class="ms-auto">
+              <ul class="navbar-nav">
+                <li class="nav-item discord-link">
+                  <a class="btn btn-primary" href="login.html"
+                    ><i class="bi bi-discord"></i> Solicitar Acesso</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      style="
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), var(--primary)),
+          url('https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg');
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <section class="container login">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-4 fw-bold lh-1 mb-3 title">
+                Você está quase lá!
+              </h1>
+              <h4 class="col-lg-10 fs-4">
+                Nós precisamos do seu nome completo para validar se você está
+                matriculado no curso de TDS.
+              </h4>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+              <form class="p-4 p-md-5 border rounded-3 bg-light">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingName"
+                    placeholder="Nome completo"
+                    required
+                  />
+                  <label for="floatingName">Nome completo</label>
                 </div>
 
-            </section>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="email@servidor.com"
+                    required
+                  />
+                  <label for="floatingInput">Email</label>
+                </div>
 
-            
-        </main>
-        <footer class="footer mt-auto py-3 bg-light text-center">
-          <div class="container">
-            <span class="text-muted">© TDS-PE Alunos - 2024 Todos os direitos reservados</span>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me" /> Confirmo que
+                    li e aceito os <a href="#">termos</a> dessa plataforma
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">
+                  Solicitar
+                </button>
+
+                <hr class="my-4" />
+
+                <small class="text-muted"
+                  ><a href="minha-conta.html"
+                    >Clique aqui para ver suas comunidades</a
+                  ></small
+                >
+              </form>
+            </div>
           </div>
-        </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- Vercel -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
-  
-  </body>
-</body>
-</html>
+        </div>
+      </section>
+    </main>
+    <footer class="footer mt-auto py-3 bg-light text-center">
+      <div class="container">
+        <span class="text-muted"
+          >© TDS-PE Alunos - 2024 Todos os direitos reservados</span
+        >
+      </div>
+    </footer>
+    <!-- Script JavaScript -->
+    <script src="/js/script.js"></script>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Vercel -->
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
+</html>
